@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1 style="text-align: center;">welcome anon</h1>
+    <div style="text-align: center;">
+        {% for todo in todos  %}
+        <center><a href="{% url 'detail' todo.id %}">{{ todo }}</a></center>
+        {% endfor %}
+        <a href="{% url 'add-todo' %}">add new todo list</a>
+    </div>
+</body>
+</html>

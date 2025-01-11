@@ -1,0 +1,8 @@
+.completed-task {
+    text-decoration: line-through;  /* Strikes through completed tasks */
+    color: green;  /* Makes completed tasks look green */
+}
+
+.not-completed-task {
+    color: red;  /* Makes incomplete tasks appear red */
+}
